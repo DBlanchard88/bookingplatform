@@ -7,8 +7,8 @@
   },
   "scripts": {
     "start": "cd backend && npm start",
-    "build": "cd frontend && npm install && npm run build && cd ../backend && npm run build"
-      
+    "build": "cd frontend && npm install && npm run build && cd ../backend && npm run build",
+    "heroku-postbuild": "npm run build"
   },
 
   "dependencies": {
