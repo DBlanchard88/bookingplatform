@@ -1,17 +1,32 @@
 {
 
   "name": "bookingplatform",
+
   "version": "1.0.0",
+
   "engines": {
+
     "node": "22.x"
+
   },
+
   "scripts": {
+
     "start": "cd backend && npm start",
+
     "build": "cd frontend && npm install && npm run build && cd ../backend && npm run build",
+
     "heroku-postbuild": "npm run build"
+
   },
 
   "dependencies": {
-    "serve": "^14.0.1"
+
+    "serve": "^14.0.1",
+
+    "typescript": "^5.5.2"
+
   }
+
 }
+
