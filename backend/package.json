@@ -27,9 +27,8 @@
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.7.0",
     "mongoose": "^8.4.3",
-    "typescript": "^5.4.5"
-  },
-  "devDependencies": {
+    "typescript": "^5.4.5",
+
     "@types/bcryptjs": "^2.4.6",
     "@types/cookie-parser": "^1.4.7",
     "@types/cors": "^2.8.17",
@@ -38,6 +37,9 @@
     "@types/node": "^20.14.6",
     "nodemon": "^3.1.4",
     "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    
   
   }
 }
