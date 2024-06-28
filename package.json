@@ -8,6 +8,10 @@
   "scripts": {
     "start": "cd backend && npm start",
     "build": "cd frontend && npm install && npm run build && cd ../backend && npm run build",
-     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
+     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
+  },
+
+  "dependencies": {
+    "serve": "^14.0.1"
   }
 }
