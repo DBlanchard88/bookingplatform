@@ -6,11 +6,12 @@
     "node": "22.x"
   },
   "scripts": {
-    "start": "serve -s build && cd backend && npm start",
-    "build": "cd frontend && npm install && npm run build && cd ../backend && npm run build"
-      
+    "start": "cd backend && npm start",
+    "build": "cd frontend && npm install && npm run build && cd ../backend && npm run build",
+    "heroku-postbuild": "npm run build"
   },
+
   "dependencies": {
     "serve": "^14.0.1"
   }
-  }
+}
