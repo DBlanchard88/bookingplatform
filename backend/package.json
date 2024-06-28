@@ -26,7 +26,8 @@
     "express-validator": "^7.1.0",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.7.0",
-    "mongoose": "^8.4.3"
+    "mongoose": "^8.4.3",
+    "typescript": "^5.4.5"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
@@ -36,7 +37,7 @@
     "@types/jsonwebtoken": "^9.0.6",
     "@types/node": "^20.14.6",
     "nodemon": "^3.1.4",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.4.5"
+    "ts-node": "^10.9.2"
+  
   }
 }
