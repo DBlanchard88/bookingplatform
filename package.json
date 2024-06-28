@@ -1,6 +1,12 @@
 {
-"scripts": {
-    "build": "cd frontend && npm install && npm run build && cd ../backend && npm run build",
-    "start": "cd backend && npm start"
-  }
+
+  "name": "bookingplatform",
+  "version": "1.0.0",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+      "build": "cd frontend && npm install && npm run build && cd ../backend && npm run build",
+      "start": "cd backend && npm start"
+    }
 }
