@@ -1,6 +1,6 @@
-import express, { Request, Response } from 'express';
-import User from '../models/user';
-import jwt from 'jsonwebtoken';
+import express, { Request, Response } from "express";
+import User from "../models/user";
+import jwt from "jsonwebtoken";
 import { check, validationResult } from "express-validator";
 
 const router = express.Router();
@@ -9,10 +9,12 @@ const router = express.Router();
 router.post(
   "/register",
   [
-    check('email', 'Email is required').isEmail(),
-    check('password', 'Password with 6 or more characters required').isLength({ min: 6 }),
-    check('firstName', 'First Name is required').isString(),
-    check('lastName', 'Last Name is required').isString(),
+    check("email", "Email is required").isEmail(),
+    check("password", "Password with 6 or more characters required").isLength({
+      min: 6,
+    }),
+    check("firstName", "First Name is required").isString(),
+    check("lastName", "Last Name is required").isString(),
   ],
   async (req: Request, res: Response) => {
     const errors = validationResult(req);
@@ -53,4 +55,4 @@ router.post(
   }
 );
 
-export default router; 
+export default router;
