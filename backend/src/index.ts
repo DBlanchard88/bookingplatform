@@ -29,6 +29,11 @@ app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/my-hotels", myHotelRoutes);
 
+// for all requests that are not api requests, we will send the index.html file in the frontend
+app.get("*", (req: Request, res: Response) => {
+  res.sendFile(path.join(__dirname, "../../frontend/dist/index.html"));
+});
+
 const PORT = process.env.PORT || 7000;
 
 app.listen(PORT, () => {
